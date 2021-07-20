@@ -27,7 +27,7 @@
  * Now our server is publicly accessible by the URLs returned by ngrok.
 
 ##### 4. Creation of Excel sheet
- * Create a new Excel file(.xlsx) "Book1.xlsx" and save it under 'D:'(taking example of windows). I've used "Book1" as name for the excel sheet.
+ * Create a new Excel file(.xlsx) "Book1.xlsx" and save it under 'D:' drive (taking example of windows). I've used "Book1" as name for the excel sheet.
 
  * OK, you’ve created it! Now, please make sure you have two sheets("RequestSheet", "ResultSheet") inside your excel file.
 
@@ -35,13 +35,14 @@
  
  * "ResultSheet", this sheet will be used to populate the test results. For now, we are populating 'Test-URL', 'Test-Id', 'Total Blocking Time (TBT)', 'Largest Contentful Paint(LCP)',
 	 'Cumulative Layout Shift (CLS)', 'SpeedIndex', 'Time To FirstByte'
-
-Req-Sheet Image 
+	 
+	 
+   ![image](https://user-images.githubusercontent.com/81590480/126377055-65c1dfd2-cde5-40e6-a954-11da93b5df3e.png)
  
+
  * After setting up everything as mentioned above, then hit /submittest as a "POST" request from postman or by any other means.
    E.G. - > http://localhost:8080/submittest/
 
  * Once all these things are done and submitted, you will get your desired results in your "ResultSheet" once pingback url has successfully captured test results  
 
-ResultImg
-
+  ![image](https://user-images.githubusercontent.com/81590480/126377200-947609df-9963-4ad9-9cb6-c6e2674e11ab.png)
