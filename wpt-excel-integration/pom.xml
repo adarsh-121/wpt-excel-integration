@@ -9,11 +9,11 @@
 		<version>2.5.1</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.wpt-slack-integration</groupId>
-	<artifactId>wpt-slack-integration</artifactId>
+	<groupId>com.wpt-excel-integration</groupId>
+	<artifactId>wpt-excel-integration</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>wpt-slack-integration</name>
-	<description>wpt-slack-integration</description>
+	<name>wpt-excel-integration</name>
+	<description>wpt-excel-integration</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -39,11 +39,6 @@
 			<artifactId>jackson-databind</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>com.slack.api</groupId>
-			<artifactId>slack-api-client</artifactId>
-			<version>1.0.2</version>
-		</dependency>
 
 		<dependency>
 			<groupId>org.apache.poi</groupId>
