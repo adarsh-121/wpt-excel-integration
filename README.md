@@ -6,7 +6,7 @@
    <a href="https://docs.webpagetest.org/api/integrations/#officially-supported-integrations">Learn about more WebPageTest API Integrations in our docs</a> 
    </p>
    
-#### Steps to follow in integrating WPT & Slack
+#### Steps to follow in integrating WPT with Excel
 
 ##### 1. Setting up a java project.
   * WPT API Key, Get yours from here [WebPageTest API Key](https://app.webpagetest.org/ui/entry/wpt/signup?enableSub=true&utm_source=docs&utm_medium=github&utm_campaign=slackbot&utm_content=account)
@@ -33,8 +33,7 @@
 
  * "RequestSheet" will contain 'test-Urls', 'API-Key', 'Location'. 
  
- * "ResultSheet", this sheet will be used to populate the test results. For now, we are populating 'Test-URL', 'Test-Id', 'Total Blocking Time (TBT)', 'Largest Contentful Paint(LCP)',
-	 'Cumulative Layout Shift (CLS)', 'SpeedIndex', 'Time To FirstByte'
+ * "ResultSheet", this sheet will be used to populate the test results. For now, we are populating metrics like 'Test-URL', 'Test-Id', 'Total Blocking Time (TBT)', 'Largest      Contentful Paint(LCP)', 'Cumulative Layout Shift (CLS)', 'SpeedIndex', 'Time To FirstByte'
 	 
 	 
    ![image](https://user-images.githubusercontent.com/81590480/126377055-65c1dfd2-cde5-40e6-a954-11da93b5df3e.png)
@@ -43,6 +42,7 @@
  * After setting up everything as mentioned above, then hit /submittest as a "POST" request from postman or by any other means.
    E.G. - > http://localhost:8080/submittest/
 
- * Once all these things are done and submitted, you will get your desired results in your "ResultSheet" once pingback url has successfully captured test results  
+ * Once all these things are done and submitted, you will get your desired results in your "ResultSheet" once pingback url has successfully captured test results
+   
 
   ![image](https://user-images.githubusercontent.com/81590480/126377200-947609df-9963-4ad9-9cb6-c6e2674e11ab.png)
