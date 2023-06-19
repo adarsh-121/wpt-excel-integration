@@ -52,6 +52,8 @@ public class ExcelController {
 			String url = "https://www.webpagetest.org/runtest.php?url=" + obj.get("url") + "&k=" + obj.get("key")
 					+ "&location=" + obj.get("location") + "&fvonly=1&f=json" + "&pingback=" + ngrokUrl + "/testresult";
 
+			System.out.println("Embedded URL" + url);
+
 			restTemplate.getForEntity(url, String.class);
 
 		}
